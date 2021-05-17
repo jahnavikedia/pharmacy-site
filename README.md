@@ -2,6 +2,4 @@
 
 Full stack site for a pharmacy.
 
-tryingggggggggg
-sgfgvsxhb
-gsgfdgv
+testing from tanmay's system
