@@ -2,8 +2,13 @@
 
 Full stack site for a pharmacy.
 
-testing from tanmay's system
+packages to install:
 
-final test
+backend:
+nodemon
 
-final test done
+frontend:
+npx create-react-app ./
+@material-ui/core
+@material-ui/icons
+axios
