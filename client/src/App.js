@@ -13,7 +13,8 @@ import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import useStyles from './styles';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
+import './App.css'
 
 const App = () => {
   const classes = useStyles();
