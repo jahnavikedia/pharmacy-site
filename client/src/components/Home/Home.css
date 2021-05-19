@@ -45,6 +45,6 @@
   padding: 20px !important;
 }
 
-button:hover {
+.home_header_button:hover {
   background-color: #ff6b86 !important;
 }
