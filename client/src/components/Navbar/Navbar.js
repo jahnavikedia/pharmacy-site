@@ -37,7 +37,7 @@ const Navbar = () => {
             <AppBar position="fixed" color="inherit"  className={classes.customizeAppbar}
                   elevation={trigger ? 24 : 0}
                   style={{
-                    minHeight: trigger ? "75px" : "100px",
+                    minHeight: trigger ? "75px" : "90px",
                   }}
             >
             <Container>
