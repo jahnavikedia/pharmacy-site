@@ -1,0 +1,18 @@
+.customMenu{
+    top:57px !important;
+}
+
+.MuiMenu-paper{
+    min-width:500px !important;
+    padding:2% !important;
+    border-top: 3px solid #2ea3f2 !important;
+}
+
+@media only screen and (max-width: 400px) {
+    .customMenu{
+        top:53px !important;
+    }
+    .MuiMenu-paper{
+        min-width:300px !important;
+  }
+}
