@@ -17,3 +17,4 @@ npx create-react-app ./
 @material-ui/icons
 axios
 moment
+aos

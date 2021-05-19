@@ -1,3 +1,4 @@
+/* header styles */
 .home_header {
   background-image: radial-gradient(
       circle at top right,
@@ -45,6 +46,67 @@
   padding: 20px !important;
 }
 
-.home_header_button:hover {
+.home_header button:hover {
   background-color: #ff6b86 !important;
 }
+
+/* end of header styles */
+
+/* about styles */
+.home_about {
+  min-height: 65vh !important;
+}
+/* end of about styles */
+
+/* footer styles */
+.home_footer {
+  background-image: radial-gradient(
+      circle at top right,
+      rgba(1, 77, 183, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/pharmacy-06.jpg) !important;
+  min-height: 65vh !important;
+  clip-path: polygon(26% 1%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+  padding-top: 150px !important;
+  color: white;
+}
+
+.home_footer_container {
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+}
+
+.home_footer_icons {
+  border-radius: 100% !important;
+  background-color: var(--icon_color);
+  padding: 25px;
+}
+
+.icon_content {
+  color: rgba(1, 77, 183, 0.9) !important;
+}
+.align_item {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.home_footer_button {
+  border-radius: 100px !important;
+  font-size: 14px;
+  font-weight: 700 !important;
+  padding: 20px !important;
+}
+
+.home_footer .btn_email {
+  background-color: white;
+  color: #666;
+  margin-bottom: 20px !important;
+  text-transform: none !important;
+}
+.home_footer .btn_subscribe {
+  background-color: var(--icon_color);
+  text-transform: none !important;
+}
+
+/* end of footer styles */

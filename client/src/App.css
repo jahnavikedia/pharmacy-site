@@ -4,6 +4,12 @@
 .pt_60 {
   padding-top: 60px !important;
 }
+.mb_30 {
+  margin-bottom: 30px !important;
+}
+:root {
+  --icon_color: #014db7;
+}
 body {
   margin: 0 !important;
   font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
