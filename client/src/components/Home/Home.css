@@ -73,8 +73,8 @@
 }
 
 .home_footer_container {
-  padding-left: 150px !important;
-  padding-right: 150px !important;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
 }
 
 .home_footer_icons {
@@ -84,7 +84,7 @@
 }
 
 .icon_content {
-  color: rgba(1, 77, 183, 0.9) !important;
+  color: var(--icon_color);
 }
 .align_item {
   align-items: center !important;
@@ -103,10 +103,25 @@
   color: #666;
   margin-bottom: 20px !important;
   text-transform: none !important;
+  text-align: center !important;
 }
 .home_footer .btn_subscribe {
   background-color: var(--icon_color);
   text-transform: none !important;
+}
+
+.icons_container {
+  margin-top: 20px !important;
+}
+
+.icon_header {
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+}
+
+.subscribe_header {
+  font-weight: 700 !important;
+  /* font-size: 44px !important; */
 }
 
 /* end of footer styles */
