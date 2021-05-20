@@ -5,13 +5,19 @@ import CallIcon from '@material-ui/icons/Call';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
 import ScheduleIcon from '@material-ui/icons/Schedule';
-
+import CardGenerator from '../../UI/CardGenerator/CardGenerator';
+import useStyles from './styles';
 import Aos from 'aos';
+
 import 'aos/dist/aos.css'
 import './Home.css'
 
+
+
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
+
+
 
 const GenerateInfo = ({iconName,header,content}) => (
     <Grid container className="mb_30">
@@ -27,9 +33,12 @@ const GenerateInfo = ({iconName,header,content}) => (
          <Typography variant='h6'>{content}</Typography>
         </Grid>
     </Grid>
-)
+);
 
-const Home = () => {
+
+
+
+const Home = (props) => {
 
     useEffect(() => {
         Aos.init({
@@ -37,7 +46,8 @@ const Home = () => {
           once: true
         });
     }, []);
-
+    const classes = useStyles();
+    
     return (
         <Grid>
             <Grid className="home_header" item xs={12}>
@@ -58,7 +68,57 @@ const Home = () => {
                 </Container>
             </Grid>
 
-            <Grid className="home_about" item xs={12}></Grid>
+            <Grid className="home_about" item xs={12}>
+                <Container className='home_about_container'>
+                    <Grid container>
+                        <Typography className="home_about_header" variant="h5">
+                            EVERYTHING IN ONE PLACE
+                        </Typography>
+                    </Grid>
+                    <Grid container>
+                        <Typography className="home_about_title" variant="h5">
+                            The One Stop Pharmacy
+                        </Typography>
+                    </Grid>
+                    <Grid container >
+                        <Typography className="home_about_desc" variant="h5" gutterBottom>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.
+                        </Typography>
+                    </Grid>
+                </Container>
+                <Grid item xs={12} className="home_about_card">
+                   <Grid container justify="space-evenly" spacing={8}>
+                    <Grid item xs={12} md={4}>
+                         <CardGenerator 
+                            src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/medicine-black.png"
+                            title="Medicine & Vitamin"
+                            header="Medicine & Vitamin"
+                            desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
+                            className="home_about_card_item"
+                        />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                    <CardGenerator 
+                            src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/vaccination-black.png"
+                            title="Vaccinations"
+                            header="Vaccinations"
+                            desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
+                            className="home_about_card_item"
+                        />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                    <CardGenerator 
+                            src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/records-black.png"
+                            title="Stored Records"
+                            header="Stored Records"
+                            desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
+                            className="home_about_card_item"
+                        />
+                    </Grid>
+                   </Grid>
+                    
+                   </Grid>
+            </Grid>
             
             <Grid className="home_footer" item xs={12}>
                 <Grid container className="home_footer_container" spacing={4}>
@@ -75,9 +135,8 @@ const Home = () => {
                                 <GenerateInfo iconName={<EmailIcon />} header="Email" content="test@fsd.com " />
                             </Grid>
                             <Grid item xs={12} sm={6}>
-                                <GenerateInfo iconName={<ScheduleIcon />} header="Timings" 
-                                content="M-F 1-6 p.m. 
-                                 M-F 1-6 p.m." />
+                                <GenerateInfo  iconName={<ScheduleIcon />} header="Timings" 
+                                content="M-F 1-6 p.m.   M-F 1-6 p.m." />
                             </Grid>
                         </Grid>
                     </Grid>
