@@ -7,11 +7,12 @@
     ),
     url(../../assets/images/pharmacy_home.jpg);
   z-index: -1;
-  min-height: 65vh;
+  min-height: 100vh;
   color: white;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   clip-path: polygon(0% 0%, 100% 0, 100% 87%, 33% 100%, 0 88%);
+  padding-top:150px !important;
 }
 
 .home_header_container {
@@ -21,7 +22,7 @@
 .home_header_headline {
   font-weight: 600 !important;
   text-transform: uppercase !important;
-  font-size: 16px !important;
+  font-size: 20px !important;
   color: rgba(255, 255, 255, 0.7) !important;
   letter-spacing: 2px !important;
   line-height: 1.5em !important;
@@ -30,7 +31,7 @@
 
 .home_header_title {
   font-weight: 700 !important;
-  font-size: 44px !important;
+  font-size: 50px !important;
   line-height: 1.4em !important;
   padding-bottom: 10px !important;
 }
@@ -56,7 +57,63 @@
 /* about styles */
 .home_about {
   min-height: 65vh !important;
+  padding: 100px !important;
 }
+.home_about_container {
+  
+  align-items:center !important;
+  justify-content:center !important;
+  padding-bottom: 50px !important;
+}
+.home_about .MuiGrid-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+.home_about_header{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffb342!important;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    text-align: center !important;
+}
+
+.home_about_title{
+  font-weight: 700 !important;
+  font-size : 40px !important;
+  padding-bottom: 10px;
+}
+
+.home_about_desc{
+  max-width: 700px;
+  color: #666 !important;
+}
+.home_about_card{
+  /* max-height: 1000px; */
+  padding-left: 50px;
+  padding-right: 50px;
+ 
+  justify-content: center !important;
+}
+
+@media only screen and (max-width: 767px)
+{
+  .home_about_title {
+    font-size: 24px !important;
+}
+.home_about {
+  padding:50px !important;
+}
+.home_about_desc{
+  max-width: 100%;
+
+}
+
+}
+
 /* end of about styles */
 
 /* footer styles */
