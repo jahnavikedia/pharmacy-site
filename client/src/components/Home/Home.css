@@ -6,6 +6,7 @@
       rgba(1, 77, 183, 0.9) 100%
     ),
     url(../../assets/images/pharmacy_home.jpg);
+  z-index: -1;
   min-height: 65vh;
   color: white;
   background-repeat: no-repeat;
@@ -65,9 +66,11 @@
       rgba(1, 77, 183, 0.5) 0%,
       rgba(255, 255, 255, 0) 100%
     ),
-    url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/pharmacy-06.jpg) !important;
-  min-height: 65vh !important;
+    url(../../assets/images/pharmacy_footer.jpg) !important;
+  min-height: 80vh !important;
   clip-path: polygon(26% 1%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding-top: 150px !important;
   color: white;
 }
@@ -75,12 +78,14 @@
 .home_footer_container {
   padding-left: 100px !important;
   padding-right: 100px !important;
+  margin-top: 10px !important;
 }
 
 .home_footer_icons {
   border-radius: 100% !important;
   background-color: var(--icon_color);
-  padding: 25px;
+  padding: 25px !important;
+  font-size: 25px !important;
 }
 
 .icon_content {
@@ -104,10 +109,14 @@
   margin-bottom: 20px !important;
   text-transform: none !important;
   text-align: center !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
 }
 .home_footer .btn_subscribe {
   background-color: var(--icon_color);
   text-transform: none !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
 }
 
 .icons_container {
@@ -121,7 +130,24 @@
 
 .subscribe_header {
   font-weight: 700 !important;
-  /* font-size: 44px !important; */
+  margin-bottom: 20px !important;
+}
+
+input {
+  text-align: center !important;
 }
 
 /* end of footer styles */
+
+/* media queries */
+
+@media (min-width: 1366px) {
+  .home_footer .btn_email {
+    max-width: 80%;
+  }
+  .home_footer .btn_subscribe {
+    max-width: 80%;
+  }
+}
+
+/* end of media queries */

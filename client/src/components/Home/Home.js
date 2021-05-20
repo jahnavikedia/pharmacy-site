@@ -16,7 +16,7 @@ theme = responsiveFontSizes(theme);
 const GenerateInfo = ({iconName,header,content}) => (
     <Grid container className="mb_30">
         <Grid item xs={12} display="flex" className="align_item">
-            <div data-aos="fade-down" data-aos-easing="linear" className="mb_30">
+            <div data-aos="fade-down" data-aos-easing="ease-out-quad" className="mb_30">
                 <span className="home_footer_icons"><Icon>{iconName}</Icon></span>
             </div>
         </Grid>
@@ -86,7 +86,7 @@ const Home = () => {
                         <Grid container>
                             <Grid item xs={12} sm={6} md={12} className="align_item">
                                 <MuiThemeProvider theme={theme}>
-                                   <Typography variant='h2' className="subscribe_header">Subscribe For Deals & Updates</Typography>
+                                   <Typography variant='h3' className="subscribe_header">Subscribe For Deals & Updates</Typography>
                                 </MuiThemeProvider>
                             </Grid>
                             <Grid item xs={12} sm={6} md={12}>
