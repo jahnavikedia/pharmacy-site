@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link,withRouter} from 'react-router-dom';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -12,10 +14,11 @@ import { useTheme } from '@material-ui/core/styles';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import useStyles from './styles';
-import './Navbar.css';
 
-const Navbar = () => {
+import useStyles from './styles';
+import './NavigationBar.css';
+
+const NavigationBar = () => {
     const classes = useStyles();
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('sm'));
@@ -32,6 +35,7 @@ const Navbar = () => {
         setAnchorEl(null);
     };
 
+    
     return(
         <div className={classes.root}>
             <AppBar position="fixed" color="inherit"  className={classes.customizeAppbar}
@@ -52,7 +56,7 @@ const Navbar = () => {
                 </Typography>
                 {matches && 
                 <div>
-                    <IconButton aria-controls="menu-appbar" aria-haspopup="true"  color="inherit">
+                    <IconButton component={Link} to="/cart" aria-controls="menu-appbar" aria-haspopup="true"  color="inherit">
                         < ShoppingCartIcon />
                     </IconButton>
                     <IconButton aria-controls="menu-appbar" aria-haspopup="true" onClick={handleMenu} color="inherit">
@@ -70,22 +74,27 @@ const Navbar = () => {
                         }}
                         open={open} onClose={handleClose} 
                         >
-                            <MenuItem onClick={handleClose}>Shop</MenuItem>
-                            <MenuItem onClick={handleClose}>Home</MenuItem>
-                            <MenuItem onClick={handleClose}>Contact Us</MenuItem>
-                            <MenuItem onClick={handleClose}>About</MenuItem>
+                            <MenuItem component={Link} to="/login" onClick={handleClose}>Login</MenuItem>
+                            <MenuItem component={Link} to="/admin" onClick={handleClose}>Admin</MenuItem>
+                            <MenuItem component={Link} exact to="/" onClick={handleClose}>Home</MenuItem>
+                            <MenuItem component={Link} to="/contactus" onClick={handleClose}>Contact Us</MenuItem>
+                            <MenuItem component={Link} to="/aboutus" onClick={handleClose}>About</MenuItem>
+                            <MenuItem component={Link} to="/products" onClick={handleClose}>Products</MenuItem>
                     </Menu>
                 </div>
                 }
                 {!matches && 
                     <div className={classes.AppbarButtons}>
-                        <Button size="large" color="inherit">Shop</Button>
-                        <Button size="large" color="inherit">Home</Button>
-                        <Button size="large" color="inherit">Contact Us</Button>
-                        <Button size="large" color="inherit">About</Button>
-                        <IconButton aria-controls="menu-appbar" aria-haspopup="true" color="inherit">
+                        <Button component={Link} to="/login" size="large" color="inherit">Login</Button>
+                        <Button component={Link} to="/admin" size="large" color="inherit" >Admin</Button>
+                        <Button component={Link} exact to="/" size="large" color="inherit">Home</Button>
+                        <Button component={Link} to="/contactus" size="large" color="inherit" >Contact Us</Button>
+                        <Button component={Link} to="/aboutus" size="large" color="inherit">About</Button>
+                        <Button component={Link} to="/products" size="large" color="inherit">Products</Button>
+                        <IconButton component={Link} to="/cart" aria-controls="menu-appbar" aria-haspopup="true" color="inherit">
                             < ShoppingCartIcon/>
                         </IconButton>
+                        
                     </div>
                 }
                 </Toolbar>
@@ -95,4 +104,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default withRouter(NavigationBar);
