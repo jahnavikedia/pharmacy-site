@@ -35,9 +35,6 @@ const GenerateInfo = ({iconName,header,content}) => (
     </Grid>
 );
 
-
-
-
 const Home = (props) => {
 
     useEffect(() => {
@@ -87,37 +84,36 @@ const Home = (props) => {
                     </Grid>
                 </Container>
                 <Grid item xs={12} className="home_about_card">
-                   <Grid container justify="space-evenly" spacing={8}>
-                    <Grid item xs={12} md={4}>
-                         <CardGenerator 
-                            src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/medicine-black.png"
-                            title="Medicine & Vitamin"
-                            header="Medicine & Vitamin"
-                            desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
-                            className="home_about_card_item"
-                        />
+                    <Grid container justify="space-evenly" spacing={8}>
+                        <Grid item xs={12} md={4}>
+                            <CardGenerator 
+                                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/medicine-black.png"
+                                title="Medicine & Vitamin"
+                                header="Medicine & Vitamin"
+                                desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
+                                className="home_about_card_item"
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <CardGenerator 
+                                    src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/vaccination-black.png"
+                                    title="Vaccinations"
+                                    header="Vaccinations"
+                                    desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
+                                    className="home_about_card_item"
+                                />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <CardGenerator 
+                                    src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/records-black.png"
+                                    title="Stored Records"
+                                    header="Stored Records"
+                                    desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
+                                    className="home_about_card_item"
+                                />
+                        </Grid>
                     </Grid>
-                    <Grid item xs={12} md={4}>
-                    <CardGenerator 
-                            src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/vaccination-black.png"
-                            title="Vaccinations"
-                            header="Vaccinations"
-                            desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
-                            className="home_about_card_item"
-                        />
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                    <CardGenerator 
-                            src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/records-black.png"
-                            title="Stored Records"
-                            header="Stored Records"
-                            desc="Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the."
-                            className="home_about_card_item"
-                        />
-                    </Grid>
-                   </Grid>
-                    
-                   </Grid>
+                </Grid>
             </Grid>
             
             <Grid className="home_footer" item xs={12}>

@@ -3,7 +3,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Aos from 'aos';
 import { makeStyles } from '@material-ui/core/styles';
 import './CardGenerator.css';
 
