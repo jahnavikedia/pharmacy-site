@@ -7,6 +7,7 @@ const App = () => {
   
   return (
     <div >
+      {/* routes to be set here, so navbar need to be called only once. */}
       <Navbar />
       <Home />
       
