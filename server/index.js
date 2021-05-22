@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import adminRoutes from './routes/adminProducts.js';
 import userRoutes from './routes/userProducts.js';
-
+import Product from './models/product.js';
 dotenv.config();
 
 
@@ -16,6 +16,28 @@ app.use(cors());
 
 app.use('/user',userRoutes); 
 app.use('/admin',adminRoutes);
+
+// var new_user = new Product({
+//     name : 'tanmay',
+//     variant : 'sasa',
+//     price : 23,
+//     quantity : 1,
+//     description : "sasasa",
+//     discount : 45,
+//     discountedPrice : 32
+// })
+  
+// new_user.save(function(err,result){
+//     if (err){
+//         console.log(err);
+//     }
+//     else{
+//         console.log(result)
+//     }
+// })
+
+
+
 
 const PORT = process.env.PORT || 5000;
 

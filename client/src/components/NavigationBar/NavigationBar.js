@@ -51,8 +51,8 @@ const NavigationBar = () => {
                       marginTop: trigger ? "0px" : "15px",
                     }}
                 >
-                <Typography  variant="h5" className={classes.title}>
-                    Pharmacy Services
+                <Typography  variant="h5" component={Link} to="/" className={classes.title}>
+                    Pharmacy Shop
                 </Typography>
                 {matches && 
                 <div>
