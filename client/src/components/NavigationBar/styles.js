@@ -11,6 +11,8 @@ export default makeStyles((theme) => ({
       title: {
         flexGrow: 1,
         fontWeight: 'bold',
+        color: 'black',
+        textDecoration : 'none'
       },
       grow: {
         flexGrow: 1,
