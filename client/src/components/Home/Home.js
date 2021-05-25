@@ -6,7 +6,6 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
 import ScheduleIcon from '@material-ui/icons/Schedule';
 import CardGenerator from '../../UI/CardGenerator/CardGenerator';
-import useStyles from './styles';
 import Aos from 'aos';
 
 import 'aos/dist/aos.css'
@@ -43,10 +42,9 @@ const Home = (props) => {
           once: true
         });
     }, []);
-    const classes = useStyles();
     
     return (
-        <Grid>
+        <Grid className="background">
             <Grid className="home_header" item xs={12}>
                 <Container className="pl_60 home_header_container">
                     <Grid container>
