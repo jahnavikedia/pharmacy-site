@@ -46,7 +46,7 @@ const Home = (props) => {
     const classes = useStyles();
     
     return (
-        <Grid>
+        <Grid className="background">
             <Grid className="home_header" item xs={12}>
                 <Container className="pl_60 home_header_container">
                     <Grid container>

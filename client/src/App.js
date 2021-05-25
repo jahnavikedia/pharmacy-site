@@ -19,7 +19,7 @@ const App = () => {
     <Grid container >
       <Grid item xs={12}>
         <Router>
-          <NavigationBar />
+        <NavigationBar />
           <Switch>
             <Route path='/' exact component={Home} />          
             <Route path='/products' component={Products} />

@@ -76,7 +76,7 @@ const NavigationBar = () => {
                         >
                             <MenuItem component={Link} to="/login" onClick={handleClose}>Login</MenuItem>
                             <MenuItem component={Link} to="/admin" onClick={handleClose}>Admin</MenuItem>
-                            <MenuItem component={Link} exact to="/" onClick={handleClose}>Home</MenuItem>
+                            <MenuItem component={Link} to="/" onClick={handleClose}>Home</MenuItem>
                             <MenuItem component={Link} to="/contactus" onClick={handleClose}>Contact Us</MenuItem>
                             <MenuItem component={Link} to="/aboutus" onClick={handleClose}>About</MenuItem>
                             <MenuItem component={Link} to="/products" onClick={handleClose}>Products</MenuItem>
@@ -87,7 +87,7 @@ const NavigationBar = () => {
                     <div className={classes.AppbarButtons}>
                         <Button component={Link} to="/login" size="large" color="inherit">Login</Button>
                         <Button component={Link} to="/admin" size="large" color="inherit" >Admin</Button>
-                        <Button component={Link} exact to="/" size="large" color="inherit">Home</Button>
+                        <Button component={Link} to="/" size="large" color="inherit">Home</Button>
                         <Button component={Link} to="/contactus" size="large" color="inherit" >Contact Us</Button>
                         <Button component={Link} to="/aboutus" size="large" color="inherit">About</Button>
                         <Button component={Link} to="/products" size="large" color="inherit">Products</Button>
